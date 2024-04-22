@@ -12,13 +12,17 @@ import About from './pages/About'
 import Recipe from './pages/Recipe'
 import Favorite from './pages/Favorite'
 
+
+import "./server"
 import './index.css'
+import RecipeDetail from './pages/RecipeDetail'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<Layout />}>
      <Route index element={<Home />} />
      <Route path="about" element={<About />} />
      <Route path ="recipes" element={<Recipe/>}/>
+     <Route path="recipes/:id" element={<RecipeDetail />}/>
      <Route path ="favorites" element={<Favorite/>}/>
     
   </Route>
