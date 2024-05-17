@@ -44,3 +44,7 @@ export async function fetchImageUrl(apiUrl) {
     throw error; // Re-throw the error for the caller to handle if needed
   }
 }
+
+export const getAccessKey = 'whsYOuypaVpkrvfwc7pgpolPynK--VUeVeY9gpQiIJQ';
+
+

@@ -10,7 +10,7 @@ import Layout from './components/Layout'
 import Home from './pages/Home'
 import About from './pages/About'
 import Recipe from './pages/Recipe'
-import Favorite from './pages/Favorite'
+// import Favorite from './pages/Favorite'
 
 
 import "./server"
@@ -23,7 +23,7 @@ const router = createBrowserRouter(createRoutesFromElements(
      <Route path="about" element={<About />} />
      <Route path ="recipes" element={<Recipe/>}/>
      <Route path="recipes/:id" element={<RecipeDetail />}/>
-     <Route path ="favorites" element={<Favorite/>}/>
+     {/* <Route path ="favorites" element={<Favorite/>}/> */}
     
   </Route>
 

@@ -36,15 +36,6 @@ createServer({
             courseType: "Dessert",
             veganFriendly: "No"
           });
-          server.create("food", { 
-            id: "4", 
-            name: "Sushi",
-            cuisine: "Japanese",
-            mainIngredient: "Fish (e.g., tuna, salmon)",
-            ingredients: ["Sushi rice", "Nori seaweed", "Fish", "Vegetables (e.g., cucumber, avocado)", "Soy sauce", "Wasabi", "Pickled ginger"],
-            courseType: "Main",
-            veganFriendly: "No"
-          });
           
           server.create("food", { 
             id: "5", 
@@ -420,6 +411,8 @@ createServer({
             const id = request.params.id
             return schema.foods.find(id)
         })
+
+        
 
         this.passthrough("https://youtube-search-and-download.p.rapidapi.com/**");
         this.passthrough("https://api.unsplash.com/**");

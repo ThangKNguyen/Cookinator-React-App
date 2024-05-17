@@ -18,12 +18,12 @@ export default function Header() {
                 >
                     Recipes
                 </NavLink>
-                <NavLink 
+                 {/* <NavLink 
                     to="/favorites"
                     style={({isActive}) => isActive ? activeStyles : null}
                 >
                     Favorites
-                </NavLink>
+                </NavLink>  */}
                 <NavLink 
                     to="/about"
                     style={({isActive}) => isActive ? activeStyles : null}
